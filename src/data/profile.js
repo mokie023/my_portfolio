@@ -40,24 +40,7 @@ export const profile = {
       repo: "https://github.com/mokie023/academic-toolkit",
       year: "2025",
     },
-    {
-      title: "Support Desk Portal",
-      description:
-        "A lightweight ticketing system with role-based dashboards, analytics, and email notifications.",
-      stack: ["React", "Node.js", "PostgreSQL"],
-      live: "https://your-live-link",
-      repo: "https://github.com/your-repo",
-      year: "2024",
-    },
-    {
-      title: "Finance Tracker",
-      description:
-        "A budgeting dashboard with recurring expenses, reports, and data export.",
-      stack: ["React", "Laravel", "MySQL"],
-      live: "https://your-live-link",
-      repo: "https://github.com/your-repo",
-      year: "2023",
-    },
+    
   ],
   contactNote:
     "Have a project in mind or want to collaborate? Send a message and I will get back to you quickly.",

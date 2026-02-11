@@ -27,7 +27,7 @@ export default function Projects() {
                 <div className="project-media">
                   <span className="project-year">{project.year}</span>
 
-                  {/* Honest status (only shows when no live demo) */}
+                  {/* Honest status (demo loading 10/02/26...) */}
                   {!hasLive && (
                     <span className="project-status">In development (local)</span>
                   )}
