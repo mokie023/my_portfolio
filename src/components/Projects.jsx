@@ -11,9 +11,13 @@ export default function Projects() {
     <section id="projects" className="section">
       <div className="container">
         <div className="section-head">
-          <h2>Projects</h2>
-          <p className="muted">
-            A selection of systems that balance clean interfaces with reliable back-end logic.
+          <div>
+            <p className="eyebrow">Featured Work</p>
+            <h2>Projects built to solve practical problems.</h2>
+          </div>
+          <p className="muted section-copy">
+            Each build is designed around usability first, with a clear structure behind the
+            interface so the product remains reliable as features grow.
           </p>
         </div>
 
@@ -36,6 +40,7 @@ export default function Projects() {
                 <div className="project-body">
                   <h3>{project.title}</h3>
                   <p className="muted">{project.description}</p>
+                  <p className="project-outcome">{project.outcome}</p>
 
                   <div className="chip-row">
                     {project.stack?.map((item) => (
@@ -45,10 +50,16 @@ export default function Projects() {
                     ))}
                   </div>
 
+                  <ul className="detail-list">
+                    {project.highlights?.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+
                   <div className="project-links">
                     {hasLive ? (
                       <a
-                        className="btn"
+                        className="project-link"
                         href={project.live}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -56,14 +67,14 @@ export default function Projects() {
                         Live Demo
                       </a>
                     ) : (
-                      <span className="btn btn-disabled" aria-disabled="true">
+                      <span className="project-link project-link-disabled" aria-disabled="true">
                         Live Demo (soon)
                       </span>
                     )}
 
                     {hasRepo ? (
                       <a
-                        className="btn btn-ghost"
+                        className="project-link project-link-secondary"
                         href={project.repo}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -71,7 +82,10 @@ export default function Projects() {
                         Source Code
                       </a>
                     ) : (
-                      <span className="btn btn-ghost btn-disabled" aria-disabled="true">
+                      <span
+                        className="project-link project-link-secondary project-link-disabled"
+                        aria-disabled="true"
+                      >
                         Source Code (soon)
                       </span>
                     )}

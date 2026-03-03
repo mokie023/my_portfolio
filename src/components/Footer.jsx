@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="site-footer">
       <div className="container footer-inner">
         <p className="muted">
-          {profile.name} · {new Date().getFullYear()}
+          {profile.name} | {new Date().getFullYear()}
         </p>
         <SocialLinks />
       </div>

@@ -29,11 +29,13 @@ export default function Contact() {
     <section id="contact" className="section">
       <div className="container contact-grid">
         <div className="contact-copy reveal">
-          <h2>Contact</h2>
+          <p className="eyebrow">Contact</p>
+          <h2>Let&apos;s build something clear, useful, and well engineered.</h2>
           <p className="muted">{profile.contactNote}</p>
           <div className="contact-details">
             <span>{profile.links.email}</span>
             <span>{profile.location}</span>
+            <span>{profile.links.linkedin.replace("https://", "")}</span>
           </div>
         </div>
         <form className="contact-form reveal" onSubmit={onSubmit}>

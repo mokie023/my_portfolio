@@ -5,9 +5,13 @@ export default function Skills() {
     <section id="skills" className="section">
       <div className="container">
         <div className="section-head">
-          <h2>Skills</h2>
-          <p className="muted">
-            Core tools and strengths for delivering polished web experiences.
+          <div>
+            <p className="eyebrow">Capabilities</p>
+            <h2>Technical strengths across the full delivery cycle.</h2>
+          </div>
+          <p className="muted section-copy">
+            I focus on shipping products that are easy to use, easy to maintain, and aligned
+            with real operational needs.
           </p>
         </div>
         <div className="skills-grid">
