@@ -6,8 +6,8 @@ This project is structured as a scalable frontend system rather than a simple st
 
 Live Demo
 
-Deployed Site: (Add your URL)
-Repository: (Add GitHub link)
+Deployed Site: mokieportfolio.app.vercel  
+Repository: https://github.com/mokie023/my_portfolio.git 
 
 Project Overview
 
